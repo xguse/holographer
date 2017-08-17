@@ -13,6 +13,7 @@ with open('HISTORY.rst') as history_file:
 
 requirements = [
     'Click>=6.0',
+    'logzero',
     # TODO: put package requirements here
 ]
 
@@ -34,10 +35,11 @@ setup(
     author="Gus Dunn",
     author_email='w.gus.dunn@gmail.com',
     url='https://github.com/xguse/holographer',
-    packages=find_packages(include=['holographer']),
+    packages=find_packages('src'),
+    package_dir={"": "src"},
     entry_points={
         'console_scripts': [
-            'holographer=holographer.cli:main'
+            'holographer=holographer.cli.main:run'
         ]
     },
     include_package_data=True,
