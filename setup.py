@@ -29,7 +29,7 @@ test_requirements = [
 
 setup(
     name='holographer',
-    version='0.0.1',
+    version='0.0.2',
     description="Holographer copies a filesytem object to a storage location and creates in its place a symlinked decoy pointing to the stored target. Think of when you run out of HDD space and need to move things to free up space but do not want to break everything that may expect to find your target in its old location.",
     long_description=readme + '\n\n' + history,
     author="Gus Dunn",
