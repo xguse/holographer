@@ -39,7 +39,7 @@ setup(
     package_dir={"": "src"},
     entry_points={
         'console_scripts': [
-            'holographer=holographer.cli.main:run'
+            'holo=holographer.cli.main:run'
         ]
     },
     include_package_data=True,
