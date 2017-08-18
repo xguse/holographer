@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Copy files/folders that exist at SOURCE to TARGET and create hologram at SOURCE."""
+"""Copy files/folders that exist at SOURCE to DESTINATION and create hologram at SOURCE."""
 
 # Imports
 import logging
