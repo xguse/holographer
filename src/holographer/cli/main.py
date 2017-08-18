@@ -36,7 +36,7 @@ USER_HOLO_DIR = USER_CONFIG_DIR / 'holographer'
 
 @click.group(invoke_without_command=True)
 @click.option('-c', '--config', default=None,
-              help="Path to optional config directory. If `None`, {user_config_dir} is searched for *.yaml files.".format(user_config_dir=str(USER_CONFIG_DIR)), type=click.Path(exists=True, file_okay=False, dir_okay=True))
+              help="Path to optional config directory. If `None`, {user_config_dir} is searched for *.yaml files.".format(user_config_dir=str(USER_HOLO_DIR)), type=click.Path(exists=True, file_okay=False, dir_okay=True))
 @click.pass_context
 def run(ctx=None, config=None, home=None):
     """Command interface to the holographer.
